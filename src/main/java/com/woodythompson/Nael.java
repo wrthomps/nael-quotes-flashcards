@@ -6,7 +6,10 @@ import lombok.Value;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Nael {
@@ -75,7 +78,7 @@ public class Nael {
                 break;
             }
 
-            Duration duration = Duration.between(start, Instant.now());
+            Duration duration = Duration.between(start, Instant.now(CLOCK));
             boolean isCorrect = validate(selected.getResolution(), input);
             streak = isCorrect ? streak + 1 : 0;
             StringBuilder result = new StringBuilder();
