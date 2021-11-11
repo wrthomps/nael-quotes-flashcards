@@ -20,7 +20,7 @@ public class Nael {
                                              "The valid mechanic names are:\n" +
                                              "\tdynamo, chariot, beam, dalamud, raven, stream\n" +
                                              "\n" +
-                                             "To exit, type \"exit\".";
+                                             "To exit, type \"exit\" or press Ctrl/Cmd+C";
 
     private static final Clock CLOCK = Clock.systemUTC();
 
